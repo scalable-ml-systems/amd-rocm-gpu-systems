@@ -53,8 +53,8 @@ For GPU collection commands, environment requirements, and interpretation limits
 
 | File or directory | Role |
 |---|---|
-| [Workload](scripts/mix300-device/vllm-kernel-64tok.py) | Fixed prompt, model settings, warm-up, and profiling boundaries |
-| [Counter configuration](scripts/mix300-device/fused-moe-counters.yaml) | Three counter groups, interval eight, MoE kernel filter |
+| [Workload](scripts/vllm-kernel-64tok.py) | Fixed prompt, model settings, warm-up, and profiling boundaries |
+| [Counter configuration](scripts/fused-moe-counters.yaml) | Three counter groups, interval eight, MoE kernel filter |
 | [Trace capture](benchmark-results/mix300-device/vllm-kernel-64tok/5ab03fd80643/) | Dispatch trace, kernel statistics, domain statistics, and agent information |
 | [Counter capture](benchmark-results/mix300-device/vllm-kernel-64tok-counters/1e0279077382/) | Counter measurements and agent information |
 | [Device inventory](docs/device-inventory.txt) | Hardware record |
