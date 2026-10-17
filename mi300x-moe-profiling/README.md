@@ -4,6 +4,9 @@ How does one Qwen3 inference request become thousands of GPU launches, and how m
 
 This project follows a controlled request from kernel tracing to hardware counters and model mathematics. It uses **Qwen3-30B-A3B on one AMD MI300X**, with vLLM and rocprofv3. The committed captures support the measurements below; the analysis script makes the calculations repeatable without a GPU.
 
+![launch pattern](images/moe-launch-pattern.png)
+
+
 ## Workload
 
 | Item | Configuration |
